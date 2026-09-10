@@ -227,7 +227,7 @@ function startHearts() {
 // =========================================
 
 const weddingDate =
-    new Date("2026-10-09T19:00:00").getTime();
+    new Date("2026-09-25T20:00:00").getTime();
 
 
 const countdown =
