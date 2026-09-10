@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>دعوة خطوبه</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body>
+
+<!-- الصفحة الأولى -->
+
+<div class="welcome-screen" id="welcomeScreen">
+
+    <div class="invite-card">
+
+        <div class="top-heart">
+            ❤️
+        </div>
+
+        <h1>Mohamed</h1>
+
+        <span class="and">&</span>
+
+        <h1>Fayrouz</h1>
+
+        <p class="date">
+            9 octobar 2026
+        </p>
+
+        <p class="text">
+    ندعوكم بكل حب لحضور خطوبتنا
+        </p>
+
+        <button id="openBtn">
+            Open
+        </button>
+
+    </div>
+
+</div>
+
+<!-- زر الموسيقى -->
+
+
+<!-- الموقع -->
+
+
+
+<div class="content">
+
+<section class="hero">
+
+<h3>بسم الله الرحمن الرحيم</h3>
+
+<h1>Mohamed ❤️ Fayrouz</h1>
+
+<p>
+
+يسعدنا دعوتكم لحضور خطوبتنا
+
+</p>
+
+<a href="#details" class="btn">
+
+تفاصيل الخطوبه
+
+</a>
+
+</section>
+
+<section id="details">
+
+<div class="card">
+
+<h2>
+<i class="fa-solid fa-calendar-days"></i>
+الموعد
+</h2>
+
+<p>
+الجمعة 9 أكتوبر 2026
+</p>
+
+<p>
+الساعة 7:00 مساءً
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>
+
+<i class="fa-solid fa-location-dot"></i>
+
+    المكان 
+
+</h2>
+
+<p>
+
+قاعة Jewel - التجمع الخامس
+
+</p>
+
+<a href="" target="_blank">
+
+عرض الموقع
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>
+
+<i class="fa-solid fa-hourglass-half"></i>
+
+العد التنازلي
+
+</h2>
+
+<div id="countdown">
+
+00 : 00 : 00 : 00
+
+</div>
+
+</div>
+
+</section>
+
+<section class="gallery">
+
+<h2>
+
+<i class="fa-solid fa-images"></i>
+
+صور من الذكريات
+
+</h2>
+
+<div class="images">
+
+<img src="images.jpg">
+
+<img src="imagess.jpg">
+
+</div>
+
+</section>
+
+<section class="messages">
+
+    <h2>
+        <i class="fa-solid fa-envelope-open"></i>
+        اترك تهنئتك للعروسين
+    </h2>
+
+    <input
+        type="text"
+        id="name"
+        placeholder="اكتب اسمك"
+        maxlength="50"
+    >
+
+    <textarea
+        id="message"
+        placeholder="اكتب رسالتك للعروسين"
+        maxlength="500"
+    ></textarea>
+
+    <button id="sendMessageBtn" onclick="sendMessage()">
+        إرسال التهنئة
+    </button>
+
+    <button id="archiveBtn" onclick="openArchive()">
+        <i class="fa-solid fa-lock"></i>
+        أرشيف التهاني
+    </button>
+
+    <div id="passwordBox">
+
+        <input
+            type="password"
+            id="archivePassword"
+            placeholder="كلمة مرور الأرشيف"
+        >
+
+        <button onclick="checkArchivePassword()">
+            دخول
+        </button>
+
+        <p id="passwordError"></p>
+
+    </div>
+
+    <div id="allMessages"></div>
+
+</section>
+
+<section class="thanks">
+
+<h2>
+
+❤️ شكراً لحضوركم ❤️
+
+</h2>
+
+<p>
+
+وجودكم معنا هو أجمل هدية لنا ❤️
+
+</p>
+
+</section>
+
+</div>
+<footer>
+
+  made by Zekra ❤️
+  
+</footer>
+
+<script type="module" src="script.js"></script>
+
+</body>
+
+</html>
